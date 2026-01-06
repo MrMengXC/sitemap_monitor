@@ -16,7 +16,31 @@ def load_config(config_path='config.yaml'):
     with open(config_path) as f:
         return yaml.safe_load(f)
 
-def process_sitemap(url):
+def process_sitemap(url, visited=None, max_depth=10):
+    """
+    处理 sitemap URL，支持递归处理 sitemap 索引文件
+    
+    Args:
+        url: sitemap URL
+        visited: 已访问的 URL 集合，用于防止循环
+        max_depth: 最大递归深度，防止无限递归
+    
+    Returns:
+        所有页面 URL 列表
+    """
+    if visited is None:
+        visited = set()
+    
+    if max_depth <= 0:
+        logging.warning(f"达到最大递归深度，停止处理: {url}")
+        return []
+    
+    if url in visited:
+        logging.warning(f"检测到循环引用，跳过: {url}")
+        return []
+    
+    visited.add(url)
+    
     try:
         scraper = cloudscraper.create_scraper()
         response = scraper.get(url, timeout=10)
@@ -27,9 +51,21 @@ def process_sitemap(url):
         if content[:2] == b'\x1f\x8b':  # gzip magic number
             content = gzip.decompress(content)
 
-        if b'<urlset' in content:
-            return parse_xml(content)
+        # 检测是否是 sitemap 索引文件
+        if b'<sitemapindex' in content or b'<sitemapindex>' in content:
+            logging.info(f"检测到 sitemap 索引文件: {url}")
+            sitemap_urls = parse_sitemap_index(content)
+            all_urls = []
+            for sitemap_url in sitemap_urls:
+                # 递归处理每个 sitemap URL
+                urls = process_sitemap(sitemap_url, visited, max_depth - 1)
+                all_urls.extend(urls)
+            return all_urls
+        elif b'<urlset' in content:
+            # 普通的 sitemap 文件，包含实际页面链接
+            return parse_xml_urlset(content)
         else:
+            # 文本格式的 sitemap
             return parse_txt(content.decode('utf-8'))
     except requests.RequestException as e:
         logging.error(f"Error processing {url}: {str(e)}")
@@ -38,7 +74,38 @@ def process_sitemap(url):
         logging.error(f"Unexpected error processing {url}: {str(e)}")
         return []
 
-def parse_xml(content):
+def parse_sitemap_index(content):
+    """
+    解析 sitemap 索引文件，提取其中的 sitemap URL
+    
+    Args:
+        content: XML 内容（bytes）
+    
+    Returns:
+        sitemap URL 列表
+    """
+    sitemap_urls = []
+    soup = BeautifulSoup(content, 'xml')
+    # 查找 sitemapindex 中的 sitemap 标签
+    for sitemap in soup.find_all('sitemap'):
+        loc = sitemap.find('loc')
+        if loc:
+            url = loc.get_text().strip()
+            if url:
+                sitemap_urls.append(url)
+                logging.debug(f"发现 sitemap: {url}")
+    return sitemap_urls
+
+def parse_xml_urlset(content):
+    """
+    解析包含实际页面链接的 sitemap 文件（urlset）
+    
+    Args:
+        content: XML 内容（bytes）
+    
+    Returns:
+        页面 URL 列表
+    """
     urls = []
     soup = BeautifulSoup(content, 'xml')
     for loc in soup.find_all('loc'):
@@ -136,12 +203,17 @@ def main(config_path='config.yaml'):
         logging.info(f"处理站点: {site['name']}")
         all_urls = []
         for sitemap_url in site['sitemap_urls']:
+            logging.info(f"  处理 sitemap: {sitemap_url}")
             urls = process_sitemap(sitemap_url)
+            logging.info(f"  获取到 {len(urls)} 个链接")
             all_urls.extend(urls)
             
         # 去重处理
         unique_urls = list({url: None for url in all_urls}.keys())
+        logging.info(f"站点 {site['name']} 共获取 {len(unique_urls)} 个唯一链接")
         new_urls = compare_data(site['name'], unique_urls)
+        if new_urls:
+            logging.info(f"站点 {site['name']} 发现 {len(new_urls)} 个新增链接")
         
         save_latest(site['name'], unique_urls)
         if new_urls:

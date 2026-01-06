@@ -43,6 +43,78 @@ sites:
     sitemap_urls:
       - "https://geometrylite.io/sitemap.xml"
     active: true
+  - name: "PizzaEdition"
+    sitemap_urls:
+      - "https://pizzaedition.win/sitemap.xml"
+    active: true
+  - name: "EscapeRoad2"
+    sitemap_urls:
+      - "https://escaperoad2.io/sitemap.xml"
+    active: true
+  - name: "CoolMathGames"
+    sitemap_urls:
+      - "https://www.coolmathgames.com/sitemap.xml"
+    active: true
+  - name: "GameDistribution"
+    sitemap_urls:
+      - "https://gamedistribution.com/sitemap-index.xml"
+    active: true
+  - name: "CrazyGames"
+    sitemap_urls:
+      - "https://www.crazygames.com/sitemap-index.xml"
+    active: true
+  - name: "Poki"
+    sitemap_urls:
+      - "https://poki.com/en/sitemaps/index.xml"
+    active: true
+  - name: "TwoPlayerGames"
+    sitemap_urls:
+      - "https://www.twoplayergames.org/sitemap-games.xml"
+    active: true
+  - name: "OnlineGames"
+    sitemap_urls:
+      - "https://www.onlinegames.io/sitemap.xml"
+    active: true
+  - name: "MiniPlay"
+    sitemap_urls:
+      - "https://www.miniplay.com/sitemap.xml"
+    active: true
+  - name: "SayGames"
+    sitemap_urls:
+      - "https://say.games/sitemap.xml"
+    active: true
+  - name: "FreeOnlineGames"
+    sitemap_urls:
+      - "https://www.freeonlinegames.com/sitemap.xml"
+    active: true
+  - name: "AddictingGames"
+    sitemap_urls:
+      - "https://www.addictinggames.com/sitemap.xml"
+    active: true
+  - name: "GameMonetize"
+    sitemap_urls:
+      - "https://gamemonetize.com/sitemap.xml"
+    active: true
+  - name: "GeometryLite"
+    sitemap_urls:
+      - "https://geometry-lite.io/sitemap.xml"
+    active: true
+  - name: "2Games"
+    sitemap_urls:
+      - "https://2games.io/sitemap.xml"
+    active: true
+  - name: "8Games"
+    sitemap_urls:
+      - "https://8games.net/site-map.html?view=xml"
+    active: true
+  - name: "HotGames"
+    sitemap_urls:
+      - "https://hotgames.io/sitemap.xml"
+    active: true
+  - name: "OZGames"
+    sitemap_urls:
+      - "https://ozgames.io/sitemap.xml"
+    active: true
 
 
 feishu:

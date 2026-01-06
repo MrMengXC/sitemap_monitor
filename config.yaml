@@ -1,0 +1,54 @@
+sites:
+  - name: "PokeRogue"
+    sitemap_urls:
+      - "https://pokerogue.io/sitemap.xml"
+    active: true
+  - name: "Wordle2"
+    sitemap_urls:
+      - "https://wordle2.io/sitemap.xml"
+    active: true
+  - name: "1Games"
+    sitemap_urls:
+      - "https://1games.io/sitemap.xml"
+    active: true
+  - name: "AZGames"
+    sitemap_urls:
+      - "https://azgames.io/sitemap.xml"
+    active: true
+  - name: "CookieClicker2"
+    sitemap_urls:
+      - "https://cookie-clicker2.com/sitemap.xml"
+    active: true
+  - name: "Phrazle"
+    sitemap_urls:
+      - "https://phrazle.io/sitemap.xml"
+    active: true
+  - name: "Sprunki"
+    sitemap_urls:
+      - "https://sprunki.org/sitemap.xml"
+    active: true
+  - name: "ThatsNotMyNeighbor"
+    sitemap_urls:
+      - "https://thatsnot-myneighbor.io/sitemap.xml"
+    active: true
+  - name: "GeometryDashWave"
+    sitemap_urls:
+      - "https://geometrydashwave.io/sitemap.xml"
+    active: true
+  - name: "SmashyRoad"
+    sitemap_urls:
+      - "https://smashy-road.io/sitemap.xml"
+    active: true
+  - name: "GeometryDashIO"
+    sitemap_urls:
+      - "https://geometrylite.io/sitemap.xml"
+    active: true
+
+
+feishu:
+  webhook_url: "https://open.feishu.cn/open-apis/bot/v2/hook/01663cc7-52be-4a7a-828d-b54e143b4e5c"
+  secret: "ZtyKHTHxmJwX7tY4Wkjdue"
+
+storage:
+  retention_days: 7
+  data_dir: "./data"

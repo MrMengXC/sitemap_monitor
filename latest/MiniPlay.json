@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<sitemap>
+<loc>https://www.miniplay.com/sitemap-general.xml</loc>
+</sitemap>
+<!-- -2013 -->
+<loc>https://www.miniplay.com/sitemap-games-1.xml</loc>
+<!-- 2014-2019 -->
+<loc>https://www.miniplay.com/sitemap-games-2.xml</loc>
+<!-- 2020+ -->
+<loc>https://www.miniplay.com/sitemap-games-3.xml</loc>
+</sitemapindex>

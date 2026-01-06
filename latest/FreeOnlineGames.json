@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Product" lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>FOG.COM - Play HTML5 games on your mobile browser, free!</title>
+<meta name="keywords" content="html5,mobile,free,online,games">
+<meta name="description" content="Play the latest HTML5 games for free in your mobile browser without app store downloads. Play on any Android, iOS or Windows mobile device!">
+<meta name="author" content="Free Online Games">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="FOG.COM - Play HTML5 games on your mobile browser, free!">
+<meta itemprop="description" content="Play the latest HTML5 games for free in your mobile browser without app store downloads. Play on any Android, iOS or Windows mobile device!">
+<meta itemprop="image" content="http://www.freeonlinegames.com/images/fogog.png">
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="product">
+<meta name="twitter:site" content="@freeonlinegames">
+<meta name="twitter:title" content="FOG.COM - Play HTML5 games on your mobile browser, free!">
+<meta name="twitter:description" content="Play the latest HTML5 games for free in your mobile browser without app store downloads. Play on any Android, iOS or Windows mobile device!">
+<!-- Open Graph data -->
+<meta property="og:title" content="FOG.COM - Play HTML5 games on your mobile browser, free!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://m.freeonlinegames.com/" />
+<meta property="og:image" content="http://www.freeonlinegames.com/images/fogog.png" />
+<meta property="og:description" content="Play the latest HTML5 games for free in your mobile browser without app store downloads. Play on any Android, iOS or Windows mobile device!" />
+<meta property="og:site_name" content="FOG Mobile" />
+<!-- Apple Icon -->
+<link rel="apple-touch-icon" href="/images/icon/apple-57.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/images/icon/apple-57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/images/icon/apple-72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/images/icon/apple-114.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/images/icon/apple-144.png" />
+<!-- CSS Includes -->
+<link rel="stylesheet" href="/css/compiled.css?1710462337" />
+<!-- JS Includes -->
+<script src="/js/compiled.js?1710462337"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/4.0.1/infinite-scroll.pkgd.min.js" integrity="sha512-R50vU2SAXi65G4oojvP1NIAC+0WsUN2s+AbkXqoX48WN/ysG3sJLiHuB1yBGTggOu8dl/w2qsm8x4Xr8D/6Hug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1081156080976072" crossorigin="anonymous"></script>
+<script>
+var fog;
+$(document).ready(function() {
+fog = new FOG();
+$('div.category').on('append.infiniteScroll', function(event, body) {
+$(event.target).append('<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-by-x+5g+aj-131" data-ad-client="ca-pub-1081156080976072" data-ad-slot="4156570220"></ins>');
+(adsbygoogle = window.adsbygoogle || []).push({});
+});
+$(window).on('load', function() {
+fog.slides.initInfiniteScrolling('latest');
+fog.menu.scrollToCategory('latest');
+</script>
+</head>
+<body>
+<div class="nav">
+<a href="/?utm_source=logo" class="logo"><img src="/images/logo.svg" alt="Play free mobile games on FOG.COM" /></a>
+<div id="categories">
+<ul>
+<li>
+<a href="#" class="active" data-category="latest">latest</a>
+</li>
+<a href="#" class="" data-category="3d">3d</a>
+<a href="#" class="" data-category="arcade">arcade</a>
+<a href="#" class="" data-category="bike">bike</a>
+<a href="#" class="" data-category="board">board</a>
+<a href="#" class="" data-category="classic">classic</a>
+<a href="#" class="" data-category="collecting">collecting</a>
+<a href="#" class="" data-category="driving">driving</a>
+<a href="#" class="" data-category="educational">educational</a>
+<a href="#" class="" data-category="fighting">fighting</a>
+<a href="#" class="" data-category="flying">flying</a>
+<a href="#" class="" data-category="girl">girl</a>
+<a href="#" class="" data-category="management">management</a>
+<a href="#" class="" data-category="puzzle">puzzle</a>
+<a href="#" class="" data-category="shooter">shooter</a>
+<a href="#" class="" data-category="simulation">simulation</a>
+<a href="#" class="" data-category="skill">skill</a>
+<a href="#" class="" data-category="strategy">strategy</a>
+<a href="#" class="" data-category="traffic">traffic</a>
+</ul>
+</div>
+<div class="category active" data-category="latest" data-page="1">
+<div class="games">
+<div class="gameContainer">
+<a href="/game/earthquake-io" class="game">
+<img class="icon" src="/games/201491/medium.jpg" alt="Play Earthquake io on FOG.COM" loading="lazy">
+<div class="title">
+<span>Earthquake io</span>
+</a>
+<a href="https://play.google.com/store/apps/details?id=com.DreamGameStudios.RealSportsFlyingCar3d" class="game">
+<img class="icon" src="/static/flying-car-simulator.jpg" alt="Real Sports Flying Car 3D - Apps on Google Play" />
+<div class="title"><span>Real Sports Flying Car 3D</span></div>
+<a href="/game/guess-their-answer" class="game">
+<img class="icon" src="/games/201286/medium.jpg" alt="Play Guess Their Answer on FOG.COM" loading="lazy">
+<span>Guess Their Answer</span>
+<a href="/game/motor-tour" class="game">
+<img class="icon" src="/games/201285/medium.jpg" alt="Play Motor Tour on FOG.COM" loading="lazy">
+<span>Motor Tour</span>
+<a href="/game/fishing-fishes" class="game">
+<img class="icon" src="/games/200458/medium.jpg" alt="Play Fishing Fishes on FOG.COM" loading="lazy">
+<span>Fishing Fishes</span>
+<a href="/game/link--color-pictures" class="game">
+<img class="icon" src="/games/200457/medium.jpg" alt="Play Link & Color Pictures on FOG.COM" loading="lazy">
+<span>Link & Color Pictures</span>
+<a href="/game/popcats-merge-the-cats" class="game">
+<img class="icon" src="/games/200151/medium.jpg" alt="Play PopCats: Merge the cats! on FOG.COM" loading="lazy">
+<span>PopCats: Merge the cats!</span>
+<a href="/game/noob-vs-pro-challenge-samsung" class="game">
+<img class="icon" src="/games/200026/medium.jpg" alt="Play Noob vs Pro Challenge Samsung on FOG.COM" loading="lazy">
+<span>Noob vs Pro Challenge Samsung</span>
+<a href="/game/toy-cars-3d-racing" class="game">
+<img class="icon" src="/games/199876/medium.jpg" alt="Play Toy Cars: 3D Racing on FOG.COM" loading="lazy">
+<span>Toy Cars: 3D Racing</span>
+<a href="/game/knife-up-3d" class="game">
+<img class="icon" src="/games/199561/medium.jpg" alt="Play Knife Up 3D on FOG.COM" loading="lazy">
+<span>Knife Up 3D</span>
+<a href="/game/trap-craft-samsung" class="game">
+<img class="icon" src="/games/199475/medium.jpg" alt="Play Trap Craft Samsung on FOG.COM" loading="lazy">
+<span>Trap Craft Samsung</span>
+<a href="/game/robot-ring-fighting-samsung" class="game">
+<img class="icon" src="/games/199474/medium.jpg" alt="Play Robot Ring Fighting Samsung on FOG.COM" loading="lazy">
+<span>Robot Ring Fighting Samsung</span>
+<a href="/game/random-cards-tower-defense-samsung" class="game">
+<img class="icon" src="/games/199473/medium.jpg" alt="Play Random Cards Tower Defense Samsung on FOG.COM" loading="lazy">
+<span>Random Cards Tower Defense Samsung</span>
+<a href="/game/car-stunt-racing-3d" class="game">
+<img class="icon" src="/games/199453/medium.jpg" alt="Play Car Stunt Racing 3D on FOG.COM" loading="lazy">
+<span>Car Stunt Racing 3D</span>
+<a href="/game/girl-coloring-dress-up-games" class="game">
+<img class="icon" src="/games/199452/medium.jpg" alt="Play Girl Coloring Dress Up Games on FOG.COM" loading="lazy">
+<span>Girl Coloring Dress Up Games</span>
+<a href="/game/minitoss" class="game">
+<img class="icon" src="/games/199412/medium.jpg" alt="Play Minitoss on FOG.COM" loading="lazy">
+<span>Minitoss</span>
+<a href="/game/crowd-clash-rush" class="game">
+<img class="icon" src="/games/199397/medium.jpg" alt="Play Crowd Clash Rush on FOG.COM" loading="lazy">
+<span>Crowd Clash Rush</span>
+<a href="/game/jump-girl-3d" class="game">
+<img class="icon" src="/games/199333/medium.jpg" alt="Play Jump Girl 3D on FOG.COM" loading="lazy">
+<span>Jump Girl 3D</span>
+<a href="/game/super-kid-adventure" class="game">
+<img class="icon" src="/games/199189/medium.jpg" alt="Play Super Kid Adventure on FOG.COM" loading="lazy">
+<span>Super Kid Adventure</span>
+<a href="/game/college-girls-team-makeover" class="game">
+<img class="icon" src="/games/199146/medium.jpg" alt="Play College Girls Team Makeover on FOG.COM" loading="lazy">
+<span>College Girls Team Makeover</span>
+<a href="/game/college-girl-coloring-dress-up" class="game">
+<img class="icon" src="/games/199117/medium.jpg" alt="Play College Girl Coloring Dress Up on FOG.COM" loading="lazy">
+<span>College Girl Coloring Dress Up</span>
+<a href="/game/cat-sorter-puzzle" class="game">
+<img class="icon" src="/games/199055/medium.jpg" alt="Play Cat Sorter Puzzle on FOG.COM" loading="lazy">
+<span>Cat Sorter Puzzle</span>
+<a href="/game/kids-coloring" class="game">
+<img class="icon" src="/games/198983/medium.jpg" alt="Play Kids Coloring on FOG.COM" loading="lazy">
+<span>Kids Coloring</span>
+<a href="/game/butterfly-match-mastery" class="game">
+<img class="icon" src="/games/198953/medium.jpg" alt="Play Butterfly Match Mastery on FOG.COM" loading="lazy">
+<span>Butterfly Match Mastery</span>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-by-x+5g+aj-131" data-ad-client="ca-pub-1081156080976072" data-ad-slot="4156570220"></ins>
+<a class="pagination__next" href="/category/latest/2">Next</a>
+<div class="page-load-status">
+<div class="infinite-scroll-request">
+<div class="loader-ellips">
+<span class="loader-ellips__dot"></span>
+<div class="category" data-category="3d" data-page="1">
+<a class="pagination__next" href="/category/3d/1">Load Games</a>
+<div class="category" data-category="arcade" data-page="1">
+<a class="pagination__next" href="/category/arcade/1">Load Games</a>
+<div class="category" data-category="bike" data-page="1">
+<a class="pagination__next" href="/category/bike/1">Load Games</a>
+<div class="category" data-category="board" data-page="1">
+<a class="pagination__next" href="/category/board/1">Load Games</a>
+<div class="category" data-category="classic" data-page="1">
+<a class="pagination__next" href="/category/classic/1">Load Games</a>
+<div class="category" data-category="collecting" data-page="1">
+<a class="pagination__next" href="/category/collecting/1">Load Games</a>
+<div class="category" data-category="driving" data-page="1">
+<a class="pagination__next" href="/category/driving/1">Load Games</a>
+<div class="category" data-category="educational" data-page="1">
+<a class="pagination__next" href="/category/educational/1">Load Games</a>
+<div class="category" data-category="fighting" data-page="1">
+<a class="pagination__next" href="/category/fighting/1">Load Games</a>
+<div class="category" data-category="flying" data-page="1">
+<a class="pagination__next" href="/category/flying/1">Load Games</a>
+<div class="category" data-category="girl" data-page="1">
+<a class="pagination__next" href="/category/girl/1">Load Games</a>
+<div class="category" data-category="management" data-page="1">
+<a class="pagination__next" href="/category/management/1">Load Games</a>
+<div class="category" data-category="puzzle" data-page="1">
+<a class="pagination__next" href="/category/puzzle/1">Load Games</a>
+<div class="category" data-category="shooter" data-page="1">
+<a class="pagination__next" href="/category/shooter/1">Load Games</a>
+<div class="category" data-category="simulation" data-page="1">
+<a class="pagination__next" href="/category/simulation/1">Load Games</a>
+<div class="category" data-category="skill" data-page="1">
+<a class="pagination__next" href="/category/skill/1">Load Games</a>
+<div class="category" data-category="strategy" data-page="1">
+<a class="pagination__next" href="/category/strategy/1">Load Games</a>
+<div class="category" data-category="traffic" data-page="1">
+<a class="pagination__next" href="/category/traffic/1">Load Games</a>
+<div id="exitButton">GO BACK</div>
+<div class="footer">
+</body>
+</html>

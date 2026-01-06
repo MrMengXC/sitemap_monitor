@@ -156,7 +156,7 @@ def compare_data(site_name, new_urls):
     
     return [url for url in new_urls if url not in last_urls]
 
-def send_feishu_notification(new_urls, config, site_name):
+def send_feishu_notification(new_urls, config, site_name, category_label=None):
     if not new_urls:
         return
     
@@ -167,7 +167,10 @@ def send_feishu_notification(new_urls, config, site_name):
         "msg_type": "interactive",
         "card": {
             "header": {
-                "title": {"tag": "plain_text", "content": f"🎮 {site_name} 游戏上新通知"},
+                "title": {
+                    "tag": "plain_text",
+                    "content": f"🎮 {site_name} 上新通知" if not category_label else f"🎮 [{category_label}] {site_name} 上新通知"
+                },
                 "template": "green"
             },
             "elements": [
@@ -196,11 +199,19 @@ def send_feishu_notification(new_urls, config, site_name):
 def main(config_path='config.yaml'):
     config = load_config(config_path)
     
-    for site in config['sites']:
-        if not site['active']:
+    def iter_all_sites(cfg):
+        for site in cfg.get('sites', []):
+            yield site, '游戏'
+        for site in cfg.get('high_traffic_sites', []):
+            yield site, '大流量'
+        for site in cfg.get('nav_sites', []):
+            yield site, '导航'
+    
+    for site, category in iter_all_sites(config):
+        if not site.get('active', True):
             continue
             
-        logging.info(f"处理站点: {site['name']}")
+        logging.info(f"处理站点: {site['name']}（分类: {category}）")
         all_urls = []
         for sitemap_url in site['sitemap_urls']:
             logging.info(f"  处理 sitemap: {sitemap_url}")
@@ -218,7 +229,7 @@ def main(config_path='config.yaml'):
         save_latest(site['name'], unique_urls)
         if new_urls:
             save_diff(site['name'], new_urls)
-            send_feishu_notification(new_urls, config, site['name'])
+            send_feishu_notification(new_urls, config, site['name'], category_label=category)
             
         # 清理旧数据
         cleanup_old_data(site['name'], config)

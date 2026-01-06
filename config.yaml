@@ -116,6 +116,22 @@ sites:
       - "https://ozgames.io/sitemap.xml"
     active: true
 
+high_traffic_sites:
+  - name: "PolloAI"
+    sitemap_urls:
+      - "https://pollo.ai/sitemap.xml"
+    active: true
+  - name: "AIEaseAI"
+    sitemap_urls:
+      - "https://www.aiease.ai/sitemap-en.xml"
+    active: true
+
+nav_sites:
+  - name: "AISearch"
+    sitemap_urls:
+      - "https://aishenqi.net/sitemap.xml"
+    active: true
+
 
 feishu:
   webhook_url: "https://open.feishu.cn/open-apis/bot/v2/hook/01663cc7-52be-4a7a-828d-b54e143b4e5c"

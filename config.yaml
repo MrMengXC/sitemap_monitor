@@ -83,14 +83,6 @@ sites:
     sitemap_urls:
       - "https://say.games/sitemap.xml"
     active: true
-  - name: "FreeOnlineGames"
-    sitemap_urls:
-      - "https://www.freeonlinegames.com/sitemap.xml"
-    active: true
-  - name: "AddictingGames"
-    sitemap_urls:
-      - "https://www.addictinggames.com/sitemap.xml"
-    active: true
   - name: "GameMonetize"
     sitemap_urls:
       - "https://gamemonetize.com/sitemap.xml"
@@ -134,7 +126,7 @@ nav_sites:
 
 
 feishu:
-  webhook_url: "https://open.feishu.cn/open-apis/bot/v2/hook/01663cc7-52be-4a7a-828d-b54e143b4e5c"
+  webhook_url: "https://open.feishu.cn/open-apis/bot/v2/hook/487baf00-e1c9-49bd-b466-f4e1ed39f059"
   secret: "ZtyKHTHxmJwX7tY4Wkjdue"
 
 storage:

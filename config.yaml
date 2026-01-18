@@ -124,6 +124,36 @@ nav_sites:
       - "https://aishenqi.net/sitemap.xml"
     active: true
 
+back_link_sites:
+  - name: "LaboParty"
+    page_url: "https://labo-party.jp/hiroba/top.php?DIARY_ID&MENU=BBS&PAGE=suzue&W_ID=99211"
+    target_domain: "labo-party.jp"
+    active: true
+  - name: "SorairoBBS"
+    page_url: "https://sorairo.bbs.wox.cc/cate3.html?page=1"
+    target_domain: "sorairo.bbs.wox.cc"
+    active: true
+  - name: "NaturalClean"
+    page_url: "https://naturalclean.co.jp/blog6/blog.cgi/permalink/20200711051427"
+    target_domain: "naturalclean.co.jp"
+    active: true
+  - name: "IndianJadibooti"
+    page_url: "https://indianjadibooti.com/Jadistore/blog-headlines/Asafoetida-Hing-Cultivation-origin-quality-insights#c62591"
+    target_domain: "indianjadibooti.com"
+    active: true
+  - name: "Ciskoreatown"
+    page_url: "https://ciskoreatown.korean.net/bbs/board.php?bo_table=freeboard&page=1&sod=asc&sop=and&sst=wr_datetime&wr_id=5"
+    target_domain: "ciskoreatown.korean.net"
+    active: true
+  - name: "PamMa"
+    page_url: "https://pam.ma/fr/index.php/2025/01/09/el-mansouri-effectue-une-visite-de-terrain-et-signe-quatre-conventions-dans-le-cadre-de-la-politique-de-la-ville/"
+    target_domain: "pam.ma"
+    active: true
+  - name: "Iubungei"
+    page_url: "https://iubungei.cloud-line.com/iubungei/comment/2019/06/97653/"
+    target_domain: "iubungei.cloud-line.com"
+    active: true
+
 
 feishu:
   webhook_url: "https://open.feishu.cn/open-apis/bot/v2/hook/487baf00-e1c9-49bd-b466-f4e1ed39f059"

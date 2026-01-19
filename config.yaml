@@ -153,6 +153,30 @@ back_link_sites:
     page_url: "https://iubungei.cloud-line.com/iubungei/comment/2019/06/97653/"
     target_domain: "iubungei.cloud-line.com"
     active: true
+  - name: "Fotosidan"
+    page_url: "https://www.fotosidan.se/blogs/mittinrerum/sa-gick-det-till-nar-jag.htm#comments"
+    target_domain: "fotosidan.se"
+    active: true
+  - name: "Spectral"
+    page_url: "https://www.spectral.ro/Media/spectral-mobila-investeste-85-milioane-de-lei-intr-un-centru-logistic-din-judetul-vaslui-forbes-25-01-2024"
+    target_domain: "spectral.ro"
+    active: true
+  - name: "WilliamsForum"
+    page_url: "https://sites.williams.edu/thewilliamsforum/uncategorized/electability-identity-as-election-terms/attachment/cnn/"
+    target_domain: "sites.williams.edu"
+    active: true
+  - name: "Bakerella"
+    page_url: "https://www.bakerella.com/santas-bag-cake-pops/"
+    target_domain: "bakerella.com"
+    active: true
+  - name: "UMBlogs"
+    page_url: "https://blogs.umb.edu/jenniferpetruzzi001/2015/10/27/music-is-key/"
+    target_domain: "blogs.umb.edu"
+    active: true
+  - name: "FitLivingEats"
+    page_url: "https://www.fitlivingeats.com/qa-founders-motion-matcha-one-go-energy-boosters/"
+    target_domain: "fitlivingeats.com"
+    active: true
 
 
 feishu:

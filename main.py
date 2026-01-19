@@ -391,7 +391,7 @@ def send_feishu_notification(new_urls, config, site_name, category_label=None):
                     "tag": "div",
                     "text": {
                         "tag": "lark_md",
-                        "content": f"**今日新增 {len(new_urls)} 款游戏**\n\n" + "\n".join(f"• {url}" for url in new_urls[:10])
+                        "content": f"**今日新增 {len(new_urls)} {'条外链' if category_label == '外链监控' else '款游戏'}**\n\n" + "\n".join(f"• {url}" for url in new_urls[:10])
                     }
                 }
             ]

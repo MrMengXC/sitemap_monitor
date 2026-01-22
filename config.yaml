@@ -177,6 +177,18 @@ back_link_sites:
     page_url: "https://www.fitlivingeats.com/qa-founders-motion-matcha-one-go-energy-boosters/"
     target_domain: "fitlivingeats.com"
     active: true
+  - name: "SanitaPuglia"
+    page_url: "https://edottosgd.sanita.puglia.it/knowledgetree/action.php?action=viewThread&fDocumentId=16801&fThreadId=2300&kt_path_info=ktcore.actions.document.discussion"
+    target_domain: "edottosgd.sanita.puglia.it"
+    active: true
+  - name: "Alwihdainfo"
+    page_url: "https://www.alwihdainfo.com/lonsikoko/Mortelle-surveillance_a153.html"
+    target_domain: "alwihdainfo.com"
+    active: true
+  - name: "GodchildKeenspot"
+    page_url: "http://godchild.keenspot.com/comic/chapter-3-page-05/"
+    target_domain: "godchild.keenspot.com"
+    active: true
 
 
 feishu:

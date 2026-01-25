@@ -189,6 +189,18 @@ back_link_sites:
     page_url: "http://godchild.keenspot.com/comic/chapter-3-page-05/"
     target_domain: "godchild.keenspot.com"
     active: true
+  - name: "GermanistikaUnizd"
+    page_url: "https://germanistika.unizd.hr/fotogalerija/emodule/25811/eitem/5042/userid/907"
+    target_domain: "germanistika.unizd.hr"
+    active: true
+  - name: "BetterReading"
+    page_url: "https://www.betterreading.com.au/news/book-life/wine-coffee-tea-what-do-you-drink-while-youre-reading/"
+    target_domain: "betterreading.com.au"
+    active: true
+  - name: "InsuranceSplash"
+    page_url: "https://www.insurancesplash.com/blog/insurance-sales-tips-for-new-insurance-agents"
+    target_domain: "insurancesplash.com"
+    active: true
 
 
 feishu:

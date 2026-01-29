@@ -201,6 +201,14 @@ back_link_sites:
     page_url: "https://www.insurancesplash.com/blog/insurance-sales-tips-for-new-insurance-agents"
     target_domain: "insurancesplash.com"
     active: true
+  - name: "PrettyOpinionated"
+    page_url: "https://www.prettyopinionated.com/2019/03/pharaoh-hound-dog-breed-guide/"
+    target_domain: "prettyopinionated.com"
+    active: true
+  - name: "MatsubaraGensen"
+    page_url: "https://www.matsubaragensen.com/hpgen/HPB/entries/12.html"
+    target_domain: "matsubaragensen.com"
+    active: true
 
 
 feishu:

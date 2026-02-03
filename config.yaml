@@ -209,6 +209,46 @@ back_link_sites:
     page_url: "https://www.matsubaragensen.com/hpgen/HPB/entries/12.html"
     target_domain: "matsubaragensen.com"
     active: true
+  - name: "TheSigningStore"
+    page_url: "https://thesigningstore.com/blog/best-beauty-products"
+    target_domain: "thesigningstore.com"
+    active: true
+  - name: "TjednoHR"
+    page_url: "https://www.tjedno.hr/poruke-za-milanovica-u-tisnom/comment-page-80/#comments"
+    target_domain: "tjedno.hr"
+    active: true
+  - name: "TVWorthWatching"
+    page_url: "http://www.tvworthwatching.com/post/Boardwalk-Rides.aspx"
+    target_domain: "tvworthwatching.com"
+    active: true
+  - name: "UCLBritsBlog"
+    page_url: "https://blogs.ucl.ac.uk/brits/2014/06/01/sales-growth-curves/"
+    target_domain: "blogs.ucl.ac.uk"
+    active: true
+  - name: "MuseoTriora"
+    page_url: "https://www.museotriora.it/2012/02/15/aa-vv-il-martirio-di-molini-e-triora-del-luglio-1944/"
+    target_domain: "museotriora.it"
+    active: true
+  - name: "OceansConference"
+    page_url: "https://global21.oceansconference.org/2019/04/01/join-5000-ocean-technology-experts-at-ocean-business/"
+    target_domain: "global21.oceansconference.org"
+    active: true
+  - name: "GoNorthWales"
+    page_url: "https://www.gonorthwales.co.uk/ideas-and-inspiration/blog/read/2016/07/10-facts-about-snowdonia-b31"
+    target_domain: "gonorthwales.co.uk"
+    active: true
+  - name: "TirangaApps"
+    page_url: "https://tirangaapps.com/top-7-tiranga-games/"
+    target_domain: "tirangaapps.com"
+    active: true
+  - name: "DilettosoBBS"
+    page_url: "https://dilettoso.cdx.jp/bbs/dilettoso_bbs.cgi?room=ohanashi&mode=sortnew&page=0&bl=0"
+    target_domain: "dilettoso.cdx.jp"
+    active: true
+  - name: "HousingMapSG"
+    page_url: "https://www.housingmap.sg/"
+    target_domain: "housingmap.sg"
+    active: true
 
 
 feishu:

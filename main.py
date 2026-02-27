@@ -260,6 +260,7 @@ def process_backlinks(page_url, target_domain):
         target_base_domain = extract_base_domain(target_domain_clean)
         
         external_links = set()
+        domain_counts = {}  # 统计每个域名已收集的链接数量
         
         # 查找所有 <a> 标签
         for link in soup.find_all('a', href=True):
@@ -287,11 +288,15 @@ def process_backlinks(page_url, target_domain):
             if is_common_domain(link_domain):
                 continue
             
-            # 只保留有效的外链
+            # 只保留有效的外链，并限制同一域名最多 2 条
             if absolute_url.startswith(('http://', 'https://')):
+                count = domain_counts.get(link_domain_clean, 0)
+                if count >= 2:
+                    continue
+                domain_counts[link_domain_clean] = count + 1
                 external_links.add(absolute_url)
         
-        logging.info(f"从 {page_url} 提取到 {len(external_links)} 个外链")
+        logging.info(f"从 {page_url} 提取到 {len(external_links)} 个外链（按域名最多 2 条）")
         return list(external_links)
         
     except requests.RequestException as e:

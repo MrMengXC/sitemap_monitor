@@ -249,6 +249,14 @@ back_link_sites:
     page_url: "https://www.housingmap.sg/"
     target_domain: "housingmap.sg"
     active: true
+  - name: "JoanieSimon"
+    page_url: "https://joaniesimon.com/grilled-lemon-garlic-potato-kabobs/grilled-potato-kabobs-with-lemon-and-garlic/"
+    target_domain: "joaniesimon.com"
+    active: true
+  - name: "SyncedReview"
+    page_url: "https://syncedreview.com/2024/09/09/microsofts-fully-pipelined-distributed-transformer-processes-16x-sequence-length-with-extreme-hardware-efficiency/"
+    target_domain: "syncedreview.com"
+    active: true
 
 
 feishu:

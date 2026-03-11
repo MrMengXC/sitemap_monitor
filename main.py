@@ -15,7 +15,16 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 def load_config(config_path='config.yaml'):
     with open(config_path) as f:
-        return yaml.safe_load(f)
+        config = yaml.safe_load(f)
+
+    # Prefer GitHub Actions env vars for sensitive config
+    # Repository Variables: FEISHU_WEBHOOK
+    feishu_webhook = os.getenv("FEISHU_WEBHOOK")
+    if feishu_webhook:
+        config.setdefault("feishu", {})
+        config["feishu"]["webhook_url"] = feishu_webhook.strip()
+
+    return config
 
 def process_sitemap(url, visited=None, max_depth=10):
     """

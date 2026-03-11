@@ -32,6 +32,8 @@ jobs:
         pip install requests beautifulsoup4 python-dateutil pyyaml lxml cloudscraper
 
     - name: Run Monitor
+      env:
+        FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
       run: python main.py
 
     - name: Commit changes

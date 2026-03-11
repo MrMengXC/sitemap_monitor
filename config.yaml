@@ -260,8 +260,7 @@ back_link_sites:
 
 
 feishu:
-  webhook_url: "https://open.feishu.cn/open-apis/bot/v2/hook/487baf00-e1c9-49bd-b466-f4e1ed39f059"
-  secret: "ZtyKHTHxmJwX7tY4Wkjdue"
+  webhook_url: ""
 
 storage:
   retention_days: 7

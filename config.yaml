@@ -257,6 +257,22 @@ back_link_sites:
     page_url: "https://syncedreview.com/2024/09/09/microsofts-fully-pipelined-distributed-transformer-processes-16x-sequence-length-with-extreme-hardware-efficiency/"
     target_domain: "syncedreview.com"
     active: true
+  - name: "BeautyThroughImperfection"
+    page_url: "https://www.beautythroughimperfection.com/reindeer-donuts/"
+    target_domain: "beautythroughimperfection.com"
+    active: true
+  - name: "ManilaShopper"
+    page_url: "https://www.manilashopper.com/2014/11/the-stoneware-pottery-shop-in-cagayan.html"
+    target_domain: "manilashopper.com"
+    active: true
+  - name: "BrownEyedBaker"
+    page_url: "https://www.browneyedbaker.com/how-to-make-pate-a-choux-fill-eclairs-and-cream-puffs/"
+    target_domain: "browneyedbaker.com"
+    active: true
+  - name: "TechWinstonSalem"
+    page_url: "http://tech.winstonsalem.com/2011/09/frameworks-becoming-totally-responsible.html"
+    target_domain: "tech.winstonsalem.com"
+    active: true
 
 
 feishu:

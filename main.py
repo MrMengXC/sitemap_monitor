@@ -434,33 +434,33 @@ def main(config_path='config.yaml'):
         for site in cfg.get('nav_sites', []):
             yield site, '导航'
     
-    # 处理 sitemap 站点
-    for site, category in iter_all_sites(config):
-        if not site.get('active', True):
-            continue
-            
-        logging.info(f"处理站点: {site['name']}（分类: {category}）")
-        all_urls = []
-        for sitemap_url in site['sitemap_urls']:
-            logging.info(f"  处理 sitemap: {sitemap_url}")
-            urls = process_sitemap(sitemap_url)
-            logging.info(f"  获取到 {len(urls)} 个链接")
-            all_urls.extend(urls)
-            
-        # 去重处理
-        unique_urls = list({url: None for url in all_urls}.keys())
-        logging.info(f"站点 {site['name']} 共获取 {len(unique_urls)} 个唯一链接")
-        new_urls = compare_data(site['name'], unique_urls)
-        if new_urls:
-            logging.info(f"站点 {site['name']} 发现 {len(new_urls)} 个新增链接")
-        
-        save_latest(site['name'], unique_urls)
-        if new_urls:
-            save_diff(site['name'], new_urls)
-            send_feishu_notification(new_urls, config, site['name'], category_label=category)
-            
-        # 清理旧数据
-        cleanup_old_data(site['name'], config)
+    # 处理 sitemap 站点（临时关闭）
+    # for site, category in iter_all_sites(config):
+    #     if not site.get('active', True):
+    #         continue
+    #
+    #     logging.info(f"处理站点: {site['name']}（分类: {category}）")
+    #     all_urls = []
+    #     for sitemap_url in site['sitemap_urls']:
+    #         logging.info(f"  处理 sitemap: {sitemap_url}")
+    #         urls = process_sitemap(sitemap_url)
+    #         logging.info(f"  获取到 {len(urls)} 个链接")
+    #         all_urls.extend(urls)
+    #
+    #     # 去重处理
+    #     unique_urls = list({url: None for url in all_urls}.keys())
+    #     logging.info(f"站点 {site['name']} 共获取 {len(unique_urls)} 个唯一链接")
+    #     new_urls = compare_data(site['name'], unique_urls)
+    #     if new_urls:
+    #         logging.info(f"站点 {site['name']} 发现 {len(new_urls)} 个新增链接")
+    #
+    #     save_latest(site['name'], unique_urls)
+    #     if new_urls:
+    #         save_diff(site['name'], new_urls)
+    #         send_feishu_notification(new_urls, config, site['name'], category_label=category)
+    #
+    #     # 清理旧数据
+    #     cleanup_old_data(site['name'], config)
     
     # 处理外链监控站点
     for site in config.get('back_link_sites', []):
